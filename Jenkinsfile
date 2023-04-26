@@ -9,13 +9,13 @@ pipeline{
     
 
     stages{
-        stage('build-the-app'){
+        stage('build'){
             steps{
                 echo 'this is the build job'
                 sh 'npm install'
             }
         }
-        stage('test-the-app'){
+        stage('test'){
             steps{
                 echo 'this is the test job'
                 sh 'npm test'
@@ -31,7 +31,7 @@ pipeline{
     
     post{
         always{
-            echo 'hey!!! this pipeline for shopping portal is completed...'
+            echo 'hey!!! this is the pipeline for shopping-portal app...'
         }
         
     }
