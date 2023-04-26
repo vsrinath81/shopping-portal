@@ -24,7 +24,7 @@ pipeline{
         stage('package'){
             steps{
                 echo 'this is the package job'
-                sh 'run package'
+                sh 'npm run package'
             }
         }
     }
